@@ -6,6 +6,7 @@ class ConverterLibrary(object):
 
     def __init__(self):
         self.converter = Converter(eur = 5)
+        self.value = 0
 
     def test_usd(self):  # keyword
         self.value = self.converter.eur_to_usd()
@@ -20,9 +21,15 @@ class ConverterLibrary(object):
         self.value = self.converter.eur_to_dem()
 
     def result_should_be(self,expected_value):  # keyword
-        if self.value != expected_value:
+        if str(self.value) != expected_value:
             raise AssertionError('%s != %s' % (self.value, expected_value))
 
 converter = ConverterLibrary()
 converter.test_usd()
-print(converter.value)
+print('USD: %s' % converter.value)
+converter.test_mkd()
+print('MKD: %s' % converter.value)
+converter.test_chf()
+print('CHF: %s' % converter.value)
+converter.test_dem()
+print('DEM: %s' % converter.value)

@@ -1,8 +1,8 @@
 class Converter:
-    eur=0
+    eur = 0
 
     def __init__(self,eur):
-        self.eur=eur
+        self.eur = eur
 
     def __str__(self):
         return str(self.eur)
@@ -19,5 +19,5 @@ class Converter:
     def eur_to_dem(self):
         return self.eur*1.92
 
-#money=Converter(eur=2)
-#print(money)
+# money = Converter(eur=2)
+# print(money)

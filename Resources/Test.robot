@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation  Simple Example
-Library  Resources.ConverterLibrary.py
+Library  ConverterLibrary
 
 *** Variables ***
 

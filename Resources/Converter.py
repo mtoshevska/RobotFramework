@@ -18,4 +18,6 @@ class Converter:
 
     def eur_to_dem(self):
         return self.eur*1.92
-    
+
+#money=Converter(eur=2)
+#print(money)
